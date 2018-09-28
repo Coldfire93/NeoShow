@@ -43,7 +43,6 @@ def login():
         elif passwd is None:
             error = 'Invalid password'
         else:
-            #SECRET_KEY = 'A0Zr98j/3yX R~XHH!jmN]LWX/,?RT'
             session['logged_in'] = True
             flash('You were logged in')
             return redirect(url_for('show_entries'))
